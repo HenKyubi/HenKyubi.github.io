@@ -15,13 +15,19 @@ import { Mousewheel, Pagination } from "swiper"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.min.js"
 
+//animate wow
+import { WOW } from "wowjs"
+import "animate.css"
+
 import Header from "../components/header"
 import Home from "../components/home"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+window.WOW = WOW
 const IndexPage = () => (
   <>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <Header />
     <Home />
   </>
