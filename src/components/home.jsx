@@ -18,7 +18,7 @@ const Home = () => (
   <div id="home" className="d-flex align-items-center masthead masked">
     <div className="container">
       <div className="row">
-        <div className="container col-md-6">
+        <div className="col-md-6">
           <h1>
             Hi, i'm <br />
             John Niño

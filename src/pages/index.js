@@ -2,34 +2,46 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-//Swiper
-import Swiper from "swiper"
-import "swiper/css"
-import "swiper/css/bundle"
-import "swiper/css/pagination"
-
-// import "/src/components/swiper.css"
-import { Mousewheel, Pagination } from "swiper"
-
 //bootstrap
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.min.js"
+
+import { SwiperSlide } from "swiper/react"
 
 //animate wow
 import { WOW } from "wowjs"
 import "animate.css"
 
-import Header from "../components/header"
-import Home from "../components/home"
-import Layout from "../components/layout"
+//components
 import Seo from "../components/seo"
+import Layout from "../components/layout"
+import Home from "../components/home"
+import About from "../components/about"
+import Portfolio from "../components/portfolio"
+import CV from "../components/cv"
+import Contacts from "../components/contacts.jsx"
 
 window.WOW = WOW
 const IndexPage = () => (
   <>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <Header />
-    <Home />
+    {/* <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> */}
+    <Layout>
+      <SwiperSlide>
+        <Home />
+      </SwiperSlide>
+      <SwiperSlide>
+        <About />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Portfolio />
+      </SwiperSlide>
+      <SwiperSlide>
+        <CV />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Contacts />
+      </SwiperSlide>
+    </Layout>
   </>
 )
 
