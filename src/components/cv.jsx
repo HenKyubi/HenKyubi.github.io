@@ -1,22 +1,33 @@
 import React from "react"
+import cv from "../assets/CV.pdf"
+
+//Lotties
+import Lottie from "react-lottie"
+import animationData from "../lotties/pdf-file.json"
+
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+}
 
 const CV = () => (
-  <section id="CV" class="resume text-center bgc-light section">
-    <div class="container">
-      <div class="row">
-        <div class="text-center col-md-8 col-md-offset-2">
-          <h2 class="section-titler">View my resume</h2>
-          <p class="lead-text">
-            Download my CV and see in detail the projects in which I have
-            participated.
-          </p>
-        </div>
-      </div>
-      <div class="section-buttons section-body-sm">
-        <a href="/img/CV.pdf" download="CV John Henry Niño Pico" class="btn">
-          Download CV
-        </a>
-      </div>
+  <section
+    id="CV"
+    className="container d-flex flex-column justify-content-center"
+  >
+    <h2 className="text-center">View my resume</h2>
+    <p className="text-center">
+      Download my CV and see in detail the projects in which I have
+      participated.
+    </p>
+    <div className="d-flex justify-content-center">
+      <a href={cv} download="CV John Henry Niño Pico.pdf">
+        <Lottie options={defaultOptions} height={300} width={300} />
+      </a>
     </div>
   </section>
 )
