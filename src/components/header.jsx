@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 //Style
 // import "../styles/header.scss"
+
+//Lotties
 import Lottie from "react-lottie"
 import animationData from "../lotties/space-mail.json"
 

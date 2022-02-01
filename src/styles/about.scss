@@ -1,2 +1,31 @@
 #about {
+  height: 100%;
+}
+
+.img-fluid {
+  border-radius: 50%;
+}
+
+.pagraph-about {
+  text-align: center;
+}
+
+.progress {
+  width: 100%;
+}
+.progress-bar {
+  background-color: yellow !important;
+  width: 75%;
+}
+
+@media (max-width: 768px) {
+  .img-fluid {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .pagraph-about {
+    text-align: justify;
+  }
 }

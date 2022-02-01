@@ -1,55 +1,86 @@
 import React from "react"
-import "../styles/about.scss"
+// import "../styles/about.scss"
+
+//Picture of me
+import Me from "../images/me.jpg"
+
+//Lotties
+import Lottie from "react-lottie"
+import animationData from "../lotties/html.json"
+
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+}
 
 const About = () => (
-  // <main id="about">
-  //   <div className="container">
-  //     <div className="row">
-  //       <div className="col-md-6">
-  //         <div className="img">
-  //           <img src="../images/me.jpg" alt="picture of John Niño" />
-  //         </div>
-  //       </div>
-  //       <div className="col-md-6">
-  //         <div></div>
-  //         <div></div>
-  //       </div>
-  //     </div>
-  //   </div>
-  // </main>
-  <section id="about" class="about section">
-    <div class="container">
-      <div class="row-padding row-columns row">
-        <div class="col-padding column col-md-6 col-md-push-6">
-          <h2 class="section-title">About me</h2>
-          <p>
-            Junior front-end developer, skills in React, Angular, HTML, CSS,
-            JavaScript, Responsive Design. Knowledge of MySQL database engine,
-            handling of GIT version control.
-          </p>
-          <div class="skills-bar">
-            <div class="progress-bar-title">HTML</div>
-            <div class="progress">
-              <div class="progress-bar" data-width="85">
-                <span>85%</span>
-              </div>
+  <section id="about" className="container d-flex">
+    <div className="row align-items-center">
+      <div className="col-12 col-md-6 d-flex justify-content-center">
+        <img className="img-fluid" alt="Picture of John Niño" src={Me} />
+      </div>
+      <div className="col-12 col-md-6">
+        <h2 className="text-center text-md-start">About me</h2>
+        <p className="pagraph-about">
+          Systems enginner - junior full-stack developer, skills in React,
+          Angular, HTML, CSS, JavaScript, NodeJS, Responsive Design. Knowledge
+          of database engines (MySQL, MongoDB), handling of GIT version control.
+        </p>
+        <div className="skills-bar row">
+          <div className="col-md-6">
+            <Lottie options={defaultOptions} height={200} width={200} />
+          </div>
+          <div className="col-md-6 d-flex-column align-items-center">
+            <div className="progress">
+              <div
+                className="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
-            <div class="progress-bar-title">CSS</div>
-            <div class="progress">
-              <div class="progress-bar" data-width="80">
-                <span>80%</span>
-              </div>
+            <div className="progress">
+              <div
+                className="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
-            <div class="progress-bar-title">JavaScript</div>
-            <div class="progress">
-              <div class="progress-bar" data-width="75">
-                <span>75%</span>
-              </div>
+            <div className="progress">
+              <div
+                className="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
           </div>
-        </div>
-        <div class="col-padding column col-md-6 col-md-pull-6">
-          <img alt="" class="img-responsive" src="img/me.jpg" />
+          {/* <div className="progress-bar-title">HTML</div>
+          <div className="progress">
+            <div className="progress-bar" data-width="85">
+              <span>85%</span>
+            </div>
+          </div>
+          <div className="progress-bar-title">CSS</div>
+          <div className="progress">
+            <div className="progress-bar" data-width="80">
+              <span>80%</span>
+            </div>
+          </div>
+          <div className="progress-bar-title">JavaScript</div>
+          <div className="progress">
+            <div className="progress-bar" data-width="75">
+              <span>75%</span>
+            </div>
+          </div> */}
         </div>
       </div>
     </div>

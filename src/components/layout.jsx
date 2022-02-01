@@ -14,7 +14,7 @@ import Footer from "./footer"
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Swiper
         direction={"vertical"}
         slidesPerView={1}
@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
       >
         {children}
       </Swiper>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
