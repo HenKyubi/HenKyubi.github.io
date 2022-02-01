@@ -1,7 +1,8 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import "../styles/header.scss"
+//Style
+// import "../styles/header.scss"
 import Lottie from "react-lottie"
 import animationData from "../lotties/space-mail.json"
 
@@ -15,7 +16,7 @@ const defaultOptions = {
 }
 
 const Header = () => (
-  <header className="header">
+  <header className="header w-100">
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <a className="navbar-brand" href="#"></a>

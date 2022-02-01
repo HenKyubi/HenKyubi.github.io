@@ -1,19 +1,42 @@
 import React from "react"
 
+//Looties
+import Lottie from "react-lottie"
+import linkedinAnimation from "../lotties/linkedin.json"
+import githubAnimation from "../lotties/github.json"
+
+//DefaultConfig Looties
+const optionsForGithub = {
+  loop: true,
+  autoplay: true,
+  animationData: githubAnimation,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+}
+const optionsForLinkeind = {
+  loop: true,
+  autoplay: true,
+  animationData: linkedinAnimation,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+}
+
 const Footer = () => (
-  <footer id="footer" className="footer text-center text-left-md bgc-dark">
+  <footer id="footer" className="w-100">
     <div className="container">
-      <div className="row">
-        <div className="col-md-5">
-          <div className="social">
-            <a href="#" className="fa fa-facebook"></a>
-            <a href="#" className="fa fa-twitter"></a>
-            <a href="#" className="fa fa-pinterest"></a>
-            <a href="#" className="fa fa-youtube-play"></a>
-          </div>
+      <div className="row align-items-center">
+        <div className="col-md-6 d-flex justify-content-center justify-content-lg-start">
+          <a href="https://github.com/HenKyubi666">
+            <Lottie options={optionsForGithub} height={30} width={30} />
+          </a>
+          <a href="https://www.linkedin.com/in/john-henrry-ni%C3%B1o-pico-108508215/">
+            <Lottie options={optionsForLinkeind} height={30} width={30} />
+          </a>
         </div>
-        <div className="col-md-7 text-right-md">
-          <div className="copy">
+        <div className="col-md-6">
+          <div className="copyrights d-flex justify-content-center justify-content-lg-end">
             © {new Date().getFullYear()}. All rights reserved
           </div>
         </div>

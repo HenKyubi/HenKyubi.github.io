@@ -1,5 +1,9 @@
 .header {
+  position: absolute;
+  z-index: 2;
+  top: 0;
   background-color: #282828;
+
   li {
     padding: {
       left: 10px;
