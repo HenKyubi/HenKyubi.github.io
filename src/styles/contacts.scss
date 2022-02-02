@@ -1,2 +1,18 @@
 #contacts {
 }
+.contact-card {
+  border: solid;
+  border-color: #00cac4;
+  border-radius: 0.25rem;
+  border-width: 1px;
+}
+
+.btn-outline {
+  border: solid;
+  border-color: #00cac4;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  &:hover {
+    background-color: #3b4949;
+  }
+}
