@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "John Henrry Niño Pico <jhonnino@unisangil.edu.co>",
   "dependencies": {
+    "@formspree/react": "^2.2.4",
     "@popperjs/core": "^2.11.2",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.1.3",

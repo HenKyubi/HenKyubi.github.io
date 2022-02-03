@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import "../styles/home.scss"
+// import "../styles/home.scss"
 import Lottie from "react-lottie"
 import animationData from "../lotties/react-logo.json"
 
@@ -17,28 +17,32 @@ const defaultOptions = {
 const Home = () => (
   <div id="home" className="d-flex align-items-center masthead masked">
     <div className="container">
-      <div className="row">
-        <div className="col-md-6">
-          <h1>
-            Hi, i'm <br />
-            John Niño
-          </h1>
-          <p className="lead-text wow animate__bounce animate__fadeInUp">
-            Front-End Developer &amp; Freelancer
-          </p>
-          <div className="control">
-            <a
-              href="#request"
-              className="btn wow fadeInUp"
-              data-wow-delay="0.2s"
-              data-toggle="modal"
-            >
-              Contact me
-            </a>
+      <div className="d-flex justify-content-center">
+        <div className="row col-lg-6 ">
+          <div className="col-md-6 title-page ps-md-5 ps-lg-3">
+            <h1 className="text-center text-md-start fw-bold fs-1 lh-sm">
+              Hi, i'm <br />
+              John Niño
+            </h1>
+            <p className="text-center text-md-start fs-6 lh-1">
+              Front-End Developer &amp; Freelancer
+            </p>
+            <div className="d-flex justify-content-center justify-content-lg-start">
+              <a
+                href="#request"
+                className="btn wow fadeInUp fs-3"
+                data-wow-delay="0.2s"
+                data-toggle="modal"
+              >
+                Contact me
+              </a>
+            </div>
           </div>
-        </div>
-        <div className="col-md-6">
-          <Lottie options={defaultOptions} height={200} width={200} />
+          <div className="col-md-6 ps-5 d-flex justify-content-lg-end principal-animation">
+            <div>
+              <Lottie options={defaultOptions} height={180} width={180} />
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -1,5 +1,4 @@
 import React from "react"
-// import "../styles/about.scss"
 
 //Picture of me
 import Me from "../images/me.jpg"
@@ -24,8 +23,8 @@ const About = () => (
         <img className="img-fluid" alt="Picture of John Niño" src={Me} />
       </div>
       <div className="col-12 col-md-6">
-        <h2 className="text-center text-md-start">About me</h2>
-        <p className="pagraph-about">
+        <h2 className="text-center text-md-start fs-1 fw-bold">About me</h2>
+        <p className="pagraph-about fs-6 lh-sm">
           Systems enginner - junior full-stack developer, skills in React,
           Angular, HTML, CSS, JavaScript, NodeJS, Responsive Design. Knowledge
           of database engines (MySQL, MongoDB), handling of GIT version control.
