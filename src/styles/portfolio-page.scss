@@ -1,0 +1,23 @@
+.btn-porfolio-page {
+  text-decoration: none;
+  color: #fafafa;
+  background-color: #333333;
+  border: solid;
+  border-width: 2px;
+  border-color: transparent;
+  border-radius: 0.25rem;
+}
+.btn-porfolio-page:hover {
+  color: #fafafa;
+  border-color: #fafafa;
+}
+@media (max-width: 767px) {
+  .img-portfolio {
+    max-height: 25vh;
+  }
+}
+@media (min-width: 768px) {
+  .img-portfolio {
+    max-height: 30vh;
+  }
+}

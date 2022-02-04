@@ -117,7 +117,9 @@ const Contacts = () => {
                 </div>
                 <div className="col-10 d-flex flex-column">
                   <h4 className="mb-0 fs-5 fw-bold lh-1">Phone</h4>
-                  <p className="m-0 fs-6">+57 316 335 00 25</p>
+                  <p className="m-0 fs-6 card-contact-text ">
+                    +57 316 335 00 25
+                  </p>
                 </div>
               </div>
               <div className="row contact-card mb-2">
@@ -132,7 +134,7 @@ const Contacts = () => {
                 </div>
                 <div className="col-10 d-flex flex-column">
                   <h4 className="mb-0 fw-bold fs-5">Address</h4>
-                  <p className="m-0 fs-6 lh-1 pb-2 pb-mb-0">
+                  <p className="m-0 fs-6 lh-1 pb-2 pb-mb-0 card-contact-text">
                     Carrera 27 # 2-59 <br /> Jose Antonio Galan <br />
                     (San Gil, Santander, Colombia)
                   </p>
@@ -149,8 +151,10 @@ const Contacts = () => {
                   </div>
                 </div>
                 <div className="col-10 d-flex flex-column">
-                  <h4 className="mb-0 fs-5 fw-bold lh-1">Email</h4>
-                  <p className="m-0 fs-6">jhonnino@unisangil.edu.co</p>
+                  <h4 className="mb-0 fs-5 fw-bold lh-1 ">Email</h4>
+                  <p className="m-0 fs-6 card-contact-text">
+                    jhonnino@unisangil.edu.co
+                  </p>
                 </div>
               </div>
             </div>

@@ -29,7 +29,7 @@ const About = () => (
   <section id="about" className="container d-flex">
     <div className="row align-items-center">
       <div className="col-12 col-md-6 d-flex justify-content-center">
-        <img className="img-fluid" alt="Picture of John Niño" src={Me} />
+        <img className="img-fluid img-me" alt="Picture of John Niño" src={Me} />
       </div>
       <div className="col-12 col-md-6 text-about">
         <div className="d-flex justify-content-center container-animation-moon">

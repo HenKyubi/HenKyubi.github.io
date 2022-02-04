@@ -8,6 +8,7 @@ import PorfolioPage from "./page-portfolio"
 const MockData = {
   MSA: {
     imgPage: "",
+    altImgPage: "",
     title: "MSA Energy",
     description: "",
     urlPage: "",
