@@ -5,7 +5,16 @@
 @import url("./home.scss");
 @import url("./about.scss");
 @import url("./cv.scss");
+@import url("./portfolio.scss");
 @import url("./contacts.scss");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+//Global
+
+body {
+  font-family: "Roboto", sans-serif !important;
+}
 
 .swiper-slide {
   align-items: center;
@@ -15,4 +24,13 @@
   text-align: justify;
 }
 
-//Global
+h1 {
+  color: #fafafa;
+}
+
+a,
+h1,
+h2,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}

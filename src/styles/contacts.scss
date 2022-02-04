@@ -7,15 +7,18 @@
   border-width: 1px;
 }
 
-.btn-contact {
+.btn-send-request {
+  font-family: "Montserrat", sans-serif;
   border: solid;
   border-color: #00cac4;
   border-radius: 0.25rem;
-  border-width: 1px;
-  :hover {
-    border-color: #000000;
-    background: #00cac4;
-  }
+  border-width: 2px;
+  background: #00cac4;
+  color: #fafafa;
+}
+.btn-send-request:hover {
+  color: #767676;
+  border-color: #767676;
 }
 
 .form-control {

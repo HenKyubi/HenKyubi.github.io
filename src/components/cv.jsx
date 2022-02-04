@@ -20,7 +20,7 @@ const CV = () => (
     className="container d-flex flex-column justify-content-center"
   >
     <h2 className="text-center fs-1 fw-bold pb-3">View my resume</h2>
-    <p className="text-center fs-6 lh-1 pb-3">
+    <p className="text-center txt-cv fs-6 lh-1 pb-3">
       Download my CV and see in detail the projects in which I have
       participated.
     </p>

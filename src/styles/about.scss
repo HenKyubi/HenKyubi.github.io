@@ -6,18 +6,24 @@
   border-radius: 50%;
 }
 
+.text-about {
+  z-index: 3;
+}
+
 .pagraph-about {
+  color: #767676;
   text-align: center;
 }
-
-.progress {
-  width: 100%;
-}
-.progress-bar {
-  background-color: yellow !important;
-  width: 75%;
+.animation-moon {
+  position: absolute;
+  z-index: 2;
 }
 
+@media (max-width: 767px) {
+  .animation-moon {
+    top: 28%;
+  }
+}
 @media (max-width: 768px) {
   .img-fluid {
     width: 50vw;
@@ -27,5 +33,16 @@
 @media (min-width: 768px) {
   .pagraph-about {
     text-align: justify;
+  }
+  .animation-moon {
+    top: 10%;
+    left: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .animation-moon {
+    top: 20%;
+    left: 45%;
   }
 }
