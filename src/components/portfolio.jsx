@@ -3,35 +3,48 @@ import React from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 // import required modules
 import { Pagination, Navigation } from "swiper"
-import PorfolioPage from "./page-portfolio"
+import PorfolioPage from "./porfolio-page"
 
-const MockData = {
-  MSA: {
-    imgPage: "",
-    altImgPage: "",
+//Import images
+import imgMSA from "../images/msaenergy.png"
+import imgHeippi from "../images/heippi.png"
+import imgHocol from "../images/hocol.png"
+import imgPokemon from "../images/pokemon.png"
+
+const MockData = [
+  {
+    imgPage: imgMSA,
+    altImgPage: "Capture of MSA energy page",
     title: "MSA Energy",
-    description: "",
+    description:
+      "Landing page designed in Figma, developed in Gatsby-Bootstrap-GraphQL-Sanity-SASS, with AWS continuous integration.",
     urlPage: "",
   },
-  Heippi: {
-    imgPage: "",
+  {
+    imgPage: imgHeippi,
+    altImgPage: "Capture of Heippi page",
     title: "Heippi",
-    description: "",
-    urlPage: "",
+    description:
+      "Landing page designed in Figma, developed in Gatsby-Bootstrap-GraphQL-Sanity-SASS, with AWS continuous integration.",
+    urlPage: "https://heippi.com/",
   },
-  Hocolg: {
-    imgPage: "",
-    title: "Heippi",
-    description: "",
-    urlPage: "",
+  {
+    imgPage: imgHocol,
+    altImgPage: "Capture of hocol",
+    title: "Hocol",
+    description:
+      "Landing page designed in Figma, developed in Gatsby-Bootstrap-GraphQL-Sanity-SASS, with AWS continuous integration.",
+    urlPage: "https://www.hocolroofing.com/",
   },
-  Pokemon: {
-    imgPage: "",
-    title: "Heippi",
-    description: "",
-    urlPage: "",
+  {
+    imgPage: imgPokemon,
+    altImgPage: "Capture of Pokemon-Gatsby page",
+    title: "Pokemon",
+    description:
+      "I develop a web interface (SPA) in which you can search, filter and expand information about different Pokemon. Using Gatsby-React-Hooks-NodeJs-Redux-Bootstrap-Axios.",
+    urlPage: "https://henkyubi666.github.io/Pokemon-gatsby/",
   },
-}
+]
 const Portfolio = () => {
   return (
     <section
@@ -50,9 +63,21 @@ const Portfolio = () => {
         modules={[Pagination]}
         className="mySwiper w-100 swiper-porfolio"
       >
-        <SwiperSlide>
-          <PorfolioPage />
-        </SwiperSlide>
+        {MockData.map((project, index, array) => {
+          console.log(project.length)
+          console.log(project.imgPage)
+          return (
+            <SwiperSlide>
+              <PorfolioPage
+                imgPage={project?.imgPage}
+                altImgPage={project?.altImgPage}
+                title={project?.title}
+                description={project?.description}
+                urlPage={project?.urlPage}
+              />
+            </SwiperSlide>
+          )
+        })}
       </Swiper>
     </section>
   )

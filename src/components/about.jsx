@@ -39,12 +39,15 @@ const About = () => (
             </div>
           </div>
         </div>
-        <h2 className="text-center text-md-start fs-1 fw-bold">About me</h2>
-        <p className="pagraph-about fs-6 lh-sm">
-          Systems enginner - junior full-stack developer, skills in React,
-          Angular, HTML, CSS, JavaScript, NodeJS, Responsive Design. Knowledge
-          of database engines (MySQL, MongoDB), handling of GIT version control.
-        </p>
+        <div>
+          <h2 className="text-center text-md-start fs-1 fw-bold">About me</h2>
+          <p className="pagraph-about fs-6 lh-sm">
+            Systems enginner - junior full-stack developer, skills in React,
+            Angular, HTML, CSS, JavaScript, NodeJS, Responsive Design. Knowledge
+            of database engines (MySQL, MongoDB), handling of GIT version
+            control.
+          </p>
+        </div>
         <div className="skills-bar justify-content-center row">
           <div>
             <Lottie options={defaultOptions} height={200} width={200} />
