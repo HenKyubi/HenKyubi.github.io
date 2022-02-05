@@ -7,7 +7,7 @@
 }
 
 .text-about {
-  z-index: 3;
+  z-index: 1;
 }
 
 .pagraph-about {
@@ -16,11 +16,13 @@
 }
 .animation-moon {
   position: absolute;
-  z-index: 2;
+  z-index: 0;
 }
 
 @media (max-width: 767px) {
   .animation-moon {
+    left: 0;
+    right: 0;
     top: 28%;
   }
 }
