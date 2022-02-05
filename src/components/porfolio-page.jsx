@@ -3,7 +3,7 @@ import React from "react"
 // import image from "../images/designer-desk-display.jpg"
 
 const PorfolioPage = ({ imgPage, altImgPage, title, description, urlPage }) => (
-  <div className="h-100 w-100 card d-flex flex-column ">
+  <div className="h-100 w-100 card d-flex flex-column porfolio-slide">
     <div className="my-auto">
       <div className="d-flex justify-content-center">
         <img className="img-portfolio" src={imgPage} alt={altImgPage} />

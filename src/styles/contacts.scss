@@ -17,6 +17,8 @@
   border-width: 2px;
   background: #00cac4;
   color: #fafafa;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
 }
 .btn-send-request:hover {
   color: #767676;

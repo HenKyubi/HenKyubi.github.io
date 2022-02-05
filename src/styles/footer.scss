@@ -3,7 +3,16 @@
   z-index: 1;
   bottom: 0;
   background-color: transparent;
-  Lottie {
-    margin: 0;
+}
+
+.logo-contact {
+  max-height: 40px;
+}
+@media (max-width: 767px) {
+  .logo-contact {
+    max-height: 30px;
   }
+}
+.copyrights {
+  color: #767676;
 }

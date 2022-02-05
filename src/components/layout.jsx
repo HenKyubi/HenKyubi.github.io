@@ -5,16 +5,17 @@ import PropTypes from "prop-types"
 import { Swiper } from "swiper/react"
 import "swiper/css"
 import "swiper/css/pagination"
-import { Mousewheel, Pagination } from "swiper"
+import "swiper/css/effect-flip"
 
-import "../styles/layout.scss"
+import { EffectFlip, Mousewheel, Pagination } from "swiper"
+
 import Header from "./header.jsx"
 import Footer from "./footer"
 
 const Layout = ({ children }) => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Swiper
         direction={"vertical"}
         slidesPerView={1}
@@ -23,12 +24,12 @@ const Layout = ({ children }) => {
         pagination={{
           clickable: true,
         }}
-        modules={[Mousewheel, Pagination]}
+        modules={[EffectFlip, Mousewheel, Pagination]}
         className="mySwiper swipper-layout"
       >
         {children}
       </Swiper>
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

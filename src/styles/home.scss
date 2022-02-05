@@ -1,10 +1,11 @@
-#home {
+.background-home {
   background-image: url("../images/designer-desk-display.jpg");
   background-color: transparent;
   background-size: cover;
-  background-position: 50% 0px;
   background-repeat: no-repeat;
-  height: 100vh;
+  background-position: 50% 50%;
+  height: 100%;
+  width: 100%;
 }
 
 .pagraph-title {
@@ -19,6 +20,8 @@
   text-decoration: none;
   background-color: #04a5d0;
   color: #fafafa;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
 }
 .btn-home-contact-me:hover {
   color: #fafafa;

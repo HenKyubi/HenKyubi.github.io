@@ -1,8 +1,11 @@
 import React from "react"
 
+//Swiper
 import { Swiper, SwiperSlide } from "swiper/react"
+//import css
+import "swiper/css/effect-flip"
 // import required modules
-import { Pagination, Navigation } from "swiper"
+import { Pagination, EffectFlip, Autoplay } from "swiper"
 import PorfolioPage from "./porfolio-page"
 
 //Import images
@@ -49,36 +52,40 @@ const Portfolio = () => {
   return (
     <section
       id="portfolio"
-      className="container d-flex flex-column justify-content-center h-100"
+      className="container d-flex flex-column justify-content-center h-100 "
     >
       <h2 className="text-center fs-1 fw-bold pb-3">Portfolio</h2>
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-        loop={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Pagination]}
-        className="mySwiper w-100 swiper-porfolio"
-      >
-        {MockData.map((project, index, array) => {
-          console.log(project.length)
-          console.log(project.imgPage)
-          return (
-            <SwiperSlide>
-              <PorfolioPage
-                imgPage={project?.imgPage}
-                altImgPage={project?.altImgPage}
-                title={project?.title}
-                description={project?.description}
-                urlPage={project?.urlPage}
-              />
-            </SwiperSlide>
-          )
-        })}
-      </Swiper>
+      <div className="porfolio-slide">
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Autoplay, EffectFlip]}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          className="mySwiper w-100 swiper-porfolio"
+        >
+          {MockData.map((project, key) => {
+            return (
+              <SwiperSlide key={`slide-portfolio-${key}`}>
+                <PorfolioPage
+                  imgPage={project?.imgPage}
+                  altImgPage={project?.altImgPage}
+                  title={project?.title}
+                  description={project?.description}
+                  urlPage={project?.urlPage}
+                />
+              </SwiperSlide>
+            )
+          })}
+        </Swiper>
+      </div>
     </section>
   )
 }
