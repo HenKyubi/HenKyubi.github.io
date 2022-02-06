@@ -40,8 +40,20 @@ const Contacts = () => {
     return <p>Thanks for joining!</p>
   }
   return (
-    <section id="contacts" className="h-100 d-flex align-items-center">
-      <div className="container">
+    <section id="contacts" className="h-100 d-flex align-items-center area">
+      <ul className="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div className="container contacts-body">
         <div className="text-center pb-2 pb-md-4">
           <h2 className="fw-bold fs-1">Keep in touch</h2>
         </div>

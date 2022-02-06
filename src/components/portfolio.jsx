@@ -52,39 +52,41 @@ const Portfolio = () => {
   return (
     <section
       id="portfolio"
-      className="container d-flex flex-column justify-content-center h-100 "
+      className=" d-flex flex-column justify-content-center h-100 "
     >
-      <h2 className="text-center fs-1 fw-bold pb-3">Portfolio</h2>
-      <div className="porfolio-slide">
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={30}
-          loop={true}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Pagination, Autoplay, EffectFlip]}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          className="mySwiper w-100 swiper-porfolio"
-        >
-          {MockData.map((project, key) => {
-            return (
-              <SwiperSlide key={`slide-portfolio-${key}`}>
-                <PorfolioPage
-                  imgPage={project?.imgPage}
-                  altImgPage={project?.altImgPage}
-                  title={project?.title}
-                  description={project?.description}
-                  urlPage={project?.urlPage}
-                />
-              </SwiperSlide>
-            )
-          })}
-        </Swiper>
+      <div className="container d-flex flex-column justify-content-center h-100 ">
+        <h2 className="text-center fs-1 fw-bold pb-3">Portfolio</h2>
+        <div className="porfolio-slide">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            loop={true}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Pagination, Autoplay, EffectFlip]}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            className="mySwiper w-100 swiper-porfolio"
+          >
+            {MockData.map((project, key) => {
+              return (
+                <SwiperSlide key={`slide-portfolio-${key}`}>
+                  <PorfolioPage
+                    imgPage={project?.imgPage}
+                    altImgPage={project?.altImgPage}
+                    title={project?.title}
+                    description={project?.description}
+                    urlPage={project?.urlPage}
+                  />
+                </SwiperSlide>
+              )
+            })}
+          </Swiper>
+        </div>
       </div>
     </section>
   )

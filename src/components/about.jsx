@@ -26,10 +26,7 @@ const defaultOptionsMoon = {
 }
 
 const About = () => (
-  <section
-    id="about"
-    className="container d-flex align-items-center animated infinite pulse delay-2s"
-  >
+  <section id="about" className="container d-flex align-items-center">
     <div className="row align-items-center">
       <div className="col-12 col-md-6 d-flex justify-content-center pb-1 pb-md-0">
         <img className="img-fluid img-me" alt="Picture of John Niño" src={Me} />
