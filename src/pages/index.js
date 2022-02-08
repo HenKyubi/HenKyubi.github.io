@@ -30,7 +30,7 @@ const IndexPage = () => {
   React.useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 4000)
+    }, 2300)
   }, [])
 
   return (

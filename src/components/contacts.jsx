@@ -117,7 +117,7 @@ const Contacts = () => {
           </form>
           <div className="col-md-6 col-lg-5">
             <div className="px-4">
-              <div className="row contact-card mb-2">
+              <div className="row contact-card mb-2 py-1 py-md-2">
                 <div className="col-2 d-flex justify-content-center ">
                   <div className="d-flex align-items-center">
                     <Lottie
@@ -134,7 +134,7 @@ const Contacts = () => {
                   </p>
                 </div>
               </div>
-              <div className="row contact-card mb-2">
+              <div className="row contact-card mb-2 py-1 py-md-2">
                 <div className="col-2 d-flex justify-content-center ">
                   <div className="d-flex align-items-center">
                     <Lottie
@@ -152,7 +152,7 @@ const Contacts = () => {
                   </p>
                 </div>
               </div>
-              <div className="row contact-card mb-2">
+              <div className="row contact-card mb-2 py-1 py-md-2">
                 <div className="col-2 d-flex justify-content-center ">
                   <div className="d-flex align-items-center">
                     <Lottie

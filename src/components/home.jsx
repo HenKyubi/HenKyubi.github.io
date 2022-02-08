@@ -32,7 +32,7 @@ const Home = () => (
               </p>
               <div className="d-flex justify-content-center justify-content-md-start">
                 <a
-                  href="#request"
+                  href="https://wa.me/573163350025"
                   className="wow fadeInUp btn-home-contact-me fs-5 fw-bold px-2"
                   data-wow-delay="0.2s"
                   data-toggle="modal"
