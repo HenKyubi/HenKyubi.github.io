@@ -1,4 +1,6 @@
-.loader {
-  height: 100vh;
+#loader {
   width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: #767676;
 }

@@ -1,13 +1,11 @@
-import React, { useEffect } from "react"
-import { useState } from "react"
+import React from "react"
 
 //Lotties
 import Lottie from "react-lottie"
-// import animationData from "../lotties/space-mail.json"
-import animationData from "../lotties/space-rocket.json"
+import animationData from "../lotties/rocket-funk.json"
 
 const defaultOptions = {
-  loop: false,
+  loop: true,
   autoplay: true,
   animationData: animationData,
   rendererSettings: {
@@ -15,34 +13,18 @@ const defaultOptions = {
   },
 }
 
-const Loader = (loading = true) => {
-  // const [loading, setLoading] = useState(true)
-  // console.log(loading)
-
-  // const hideLoader = () => {
-  //   setLoading(false)
-  // }
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setLoading(false)
-  //     // document.removeChild("loader")
-  //   }, 5000)
-  //   console.log(loading)
-  // }, [])
-
-  // initialLoad()
-  // console.log(loading)
+const Loader = () => {
   return (
-    <div
-      id="loader"
-      className="d-flex justify-content-center align-items-center loader"
-    >
-      {/* {loading && setLoading()} */}
-      <div>
-        <Lottie options={defaultOptions} />
+    <>
+      <div
+        id="loader"
+        className="d-flex align-items-center justify-content-center"
+      >
+        <div>
+          <Lottie options={defaultOptions} />
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
