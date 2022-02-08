@@ -4,29 +4,6 @@ import React from "react"
 import githubImage from "../images/GitHub.png"
 import linkeindImage from "../images/linkedin.png"
 
-//Looties
-import Lottie from "react-lottie"
-import linkedinAnimation from "../lotties/linkedin.json"
-import githubAnimation from "../lotties/github.json"
-
-//DefaultConfig Looties
-const optionsForGithub = {
-  loop: true,
-  autoplay: true,
-  animationData: githubAnimation,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  },
-}
-const optionsForLinkeind = {
-  loop: true,
-  autoplay: true,
-  animationData: linkedinAnimation,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  },
-}
-
 const Footer = () => (
   <footer id="footer" className="w-100">
     <div className="container">

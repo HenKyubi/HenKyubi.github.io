@@ -19,9 +19,10 @@ import Layout from "../components/layout.jsx"
 import Home from "../components/home.jsx"
 import About from "../components/about.jsx"
 import Portfolio from "../components/portfolio.jsx"
-import CV from "../components/cv.jsx"
+
 import Contacts from "../components/contacts.jsx"
 import Loader from "../components/loader.jsx"
+import CvComponent from "../components/cvComponent"
 
 // window.WOW = WOW
 const IndexPage = () => {
@@ -36,6 +37,10 @@ const IndexPage = () => {
   return (
     <>
       {/* <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> */}
+      <Seo
+        title="John Niño Dev."
+        description="John Niño site, here you will found: about, portfolio, download her CV, and contact form "
+      />
       {loading ? <Loader /> : null}
       <Layout>
         <SwiperSlide>
@@ -48,7 +53,7 @@ const IndexPage = () => {
           <Portfolio />
         </SwiperSlide>
         <SwiperSlide>
-          <CV />
+          <CvComponent />
         </SwiperSlide>
         <SwiperSlide>
           <Contacts />

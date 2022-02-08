@@ -14,7 +14,7 @@ const defaultOptions = {
   },
 }
 
-const CV = () => (
+const cvComponent = () => (
   <section id="CV" className="h-100 w-100 background-infinity">
     <div className="container h-100 d-flex flex-column justify-content-center">
       <h2 className="text-center fs-1 fw-bold pb-3">View my resume</h2>
@@ -31,4 +31,4 @@ const CV = () => (
   </section>
 )
 
-export default CV
+export default cvComponent
