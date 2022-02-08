@@ -10,7 +10,7 @@ import "bootstrap/dist/js/bootstrap.min.js"
 import { SwiperSlide } from "swiper/react"
 
 //animate wow
-import WOW from "wowjs"
+// import WOW from "wowjs"
 import "animate.css"
 
 //components
