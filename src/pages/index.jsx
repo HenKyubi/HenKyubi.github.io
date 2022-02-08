@@ -11,17 +11,17 @@ import { SwiperSlide } from "swiper/react"
 
 //animate wow
 // import WOW from "wowjs"
-import "animate.css"
+// import "animate.css"
 
 //components
-import Seo from "../components/seo"
-import Layout from "../components/layout"
-import Home from "../components/home"
-import About from "../components/about"
-import Portfolio from "../components/portfolio"
-import CV from "../components/cv"
-import Contacts from "../components/contacts"
-import Loader from "../components/loader"
+import Seo from "../components/seo.js"
+import Layout from "../components/layout.jsx"
+import Home from "../components/home.jsx"
+import About from "../components/about.jsx"
+import Portfolio from "../components/portfolio.jsx"
+import CV from "../components/cv.jsx"
+import Contacts from "../components/contacts.jsx"
+import Loader from "../components/loader.jsx"
 
 // window.WOW = WOW
 const IndexPage = () => {

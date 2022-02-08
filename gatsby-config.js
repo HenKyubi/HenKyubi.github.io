@@ -3,7 +3,7 @@ module.exports = {
     title: `John Niño Portfolio`,
     description: `It's my portfolio, a little bit of me, thanks for visit me.`,
     author: `@HenKyubi666`,
-    siteUrl: `https://https://henkyubi666.github.io/.gatsbyjs.io/`,
+    siteUrl: `https://https://henkyubi666.github.io/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
