@@ -21,29 +21,42 @@ import About from "../components/about"
 import Portfolio from "../components/portfolio"
 import CV from "../components/cv"
 import Contacts from "../components/contacts.jsx"
+import Loader from "../components/loader"
 
 window.WOW = WOW
-const IndexPage = () => (
-  <>
-    {/* <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> */}
-    <Layout>
-      <SwiperSlide>
-        <Home />
-      </SwiperSlide>
-      <SwiperSlide>
-        <About />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Portfolio />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CV />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Contacts />
-      </SwiperSlide>
-    </Layout>
-  </>
-)
+const IndexPage = () => {
+  const [variable, setVariable] = React.useState(true)
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      setVariable()
+    }, 3000)
+  }, [])
+
+  return (
+    <>
+      {/* <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> */}
+      {variable ? <Loader /> : null}
+      // <Loader />
+      <Layout>
+        <SwiperSlide>
+          <Home />
+        </SwiperSlide>
+        <SwiperSlide>
+          <About />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Portfolio />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CV />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Contacts />
+        </SwiperSlide>
+      </Layout>
+    </>
+  )
+}
 
 export default IndexPage
