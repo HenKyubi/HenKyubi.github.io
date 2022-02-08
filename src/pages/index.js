@@ -23,7 +23,7 @@ import CV from "../components/cv"
 import Contacts from "../components/contacts"
 import Loader from "../components/loader"
 
-window.WOW = WOW
+// window.WOW = WOW
 const IndexPage = () => {
   const [loading, setLoading] = React.useState(true)
 
