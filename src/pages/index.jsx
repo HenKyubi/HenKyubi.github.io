@@ -31,10 +31,18 @@ import CvComponent from "../components/cvComponent"
 const IndexPage = () => {
   // const [loading, setLoading] = React.useState(true)
 
+  React.useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 2300)
+  }, [])
+
+  // const [winLoad, setWinLoad] = React.useState(false)
+
   // React.useEffect(() => {
-  //   setTimeout(() => {
-  //     setLoading(false)
-  //   }, 2300)
+  // if (typeof window !== `undefined`) {
+  //   setWinLoad(false)
+  // }
   // }, [])
 
   return (
@@ -43,7 +51,7 @@ const IndexPage = () => {
         title="John Niño Dev."
         description="John Niño site, here you will found: about, portfolio, download her CV, and contact form "
       /> */}
-      {/* {loading ? <Loader /> : null} */}
+      {loading ? <Loader /> : null}
       <Layout>
         <SwiperSlide>
           <Home />
