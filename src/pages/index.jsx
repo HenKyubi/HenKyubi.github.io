@@ -29,7 +29,7 @@ import CvComponent from "../components/cvComponent"
 
 // window.WOW = WOW
 const IndexPage = () => {
-  // const [loading, setLoading] = React.useState(true)
+  const [loading, setLoading] = React.useState(true)
 
   React.useEffect(() => {
     setTimeout(() => {
