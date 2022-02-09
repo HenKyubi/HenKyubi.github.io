@@ -23,7 +23,7 @@ const Home = () => (
         <div className="d-flex justify-content-center">
           <div className="row col-lg-6 ">
             <div className="col-md-6 title-page ps-md-5 pe-md-0 ps-lg-3">
-              <h1 className="text-center text-md-start fw-bold fs-1 lh-sm wow animate__bounce">
+              <h1 className="text-center text-md-start fw-bold fs-1 lh-sm">
                 Hi, i'm <br />
                 John Niño
               </h1>
@@ -33,9 +33,7 @@ const Home = () => (
               <div className="d-flex justify-content-center justify-content-md-start">
                 <a
                   href="https://wa.me/573163350025"
-                  className="wow fadeInUp btn-home-contact-me fs-5 fw-bold px-2"
-                  data-wow-delay="0.2s"
-                  data-toggle="modal"
+                  className="btn-home-contact-me fs-5 fw-bold px-2"
                 >
                   Contact me
                 </a>

@@ -7,7 +7,7 @@ import "swiper/css"
 import "swiper/css/pagination"
 import "swiper/css/effect-flip"
 
-import { EffectFlip, Mousewheel, Pagination } from "swiper"
+import { Mousewheel, Pagination } from "swiper"
 
 import Header from "./header.jsx"
 import Footer from "./footer"
@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
         pagination={{
           clickable: true,
         }}
-        modules={[EffectFlip, Mousewheel, Pagination]}
+        modules={[Mousewheel, Pagination]}
         className="mySwiper swipper-layout"
       >
         {children}
@@ -34,8 +34,8 @@ const Layout = ({ children }) => {
   )
 }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+// Layout.propTypes = {
+//   children: PropTypes.node.isRequired,
+// }
 
 export default Layout

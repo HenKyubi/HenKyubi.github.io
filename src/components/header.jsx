@@ -1,8 +1,7 @@
-import * as React from "react"
+import React from "react"
 
 //Lotties
 import Lottie from "react-lottie"
-// import animationData from "../lotties/space-mail.json"
 import animationData from "../lotties/menu.json"
 
 const defaultOptions = {
@@ -18,9 +17,6 @@ const Header = () => (
   <header className="header w-100">
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
-        {/* <div>
-          <Lottie options={defaultOptions} height={50} width={50} />
-        </div> */}
         <button
           className="navbar-toggler toggler-menu"
           type="button"

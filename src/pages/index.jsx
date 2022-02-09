@@ -7,7 +7,10 @@ import "../styles/index.scss"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.min.js"
 
+//Swiper
 import { SwiperSlide } from "swiper/react"
+import "swiper/css"
+import "swiper/css/pagination"
 
 //animate wow
 // import WOW from "wowjs"
@@ -26,22 +29,21 @@ import CvComponent from "../components/cvComponent"
 
 // window.WOW = WOW
 const IndexPage = () => {
-  const [loading, setLoading] = React.useState(true)
+  // const [loading, setLoading] = React.useState(true)
 
-  React.useEffect(() => {
-    setTimeout(() => {
-      setLoading(false)
-    }, 2300)
-  }, [])
+  // React.useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false)
+  //   }, 2300)
+  // }, [])
 
   return (
     <>
-      {/* <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> */}
-      <Seo
+      {/* <Seo
         title="John Niño Dev."
         description="John Niño site, here you will found: about, portfolio, download her CV, and contact form "
-      />
-      {loading ? <Loader /> : null}
+      /> */}
+      {/* {loading ? <Loader /> : null} */}
       <Layout>
         <SwiperSlide>
           <Home />
