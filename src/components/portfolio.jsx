@@ -2,10 +2,8 @@ import React from "react"
 
 //Swiper
 import { Swiper, SwiperSlide } from "swiper/react"
-//import css
-import "swiper/css/effect-flip"
 // import required modules
-import { Pagination, EffectFlip, Autoplay } from "swiper"
+import { Pagination, Autoplay } from "swiper"
 import PorfolioPage from "./porfolio-page"
 
 //Import images
@@ -65,7 +63,7 @@ const Portfolio = () => {
               clickable: true,
             }}
             navigation={true}
-            modules={[Pagination, Autoplay, EffectFlip]}
+            modules={[Pagination, Autoplay]}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,

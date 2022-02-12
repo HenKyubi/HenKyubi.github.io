@@ -1,16 +1,12 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 
 //Swiper
 import { Swiper } from "swiper/react"
-import "swiper/css"
-import "swiper/css/pagination"
-import "swiper/css/effect-flip"
 
 import { Mousewheel, Pagination } from "swiper"
 
 import Header from "./header.jsx"
-import Footer from "./footer"
+import Footer from "./footer.jsx"
 
 const Layout = ({ children }) => {
   return (
@@ -33,9 +29,5 @@ const Layout = ({ children }) => {
     </>
   )
 }
-
-// Layout.propTypes = {
-//   children: PropTypes.node.isRequired,
-// }
 
 export default Layout

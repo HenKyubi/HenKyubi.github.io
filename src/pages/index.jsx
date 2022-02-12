@@ -37,20 +37,12 @@ const IndexPage = () => {
     }, 2300)
   }, [])
 
-  // const [winLoad, setWinLoad] = React.useState(false)
-
-  // React.useEffect(() => {
-  // if (typeof window !== `undefined`) {
-  //   setWinLoad(false)
-  // }
-  // }, [])
-
   return (
     <>
-      {/* <Seo
+      <Seo
         title="John Niño Dev."
         description="John Niño site, here you will found: about, portfolio, download her CV, and contact form "
-      /> */}
+      />
       {loading ? <Loader /> : null}
       <Layout>
         <SwiperSlide>
