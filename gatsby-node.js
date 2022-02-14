@@ -21,3 +21,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
     })
   }
 }
+
+// exports.onCreateWebpackConfig = ({stage, loaders, actions}) => {
+//   actions.setWebpackConfig({})
+// }
