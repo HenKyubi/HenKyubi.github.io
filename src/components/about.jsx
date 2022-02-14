@@ -39,7 +39,9 @@ const About = () => (
             </div>
           </div>
           <div className="text-about">
-            <h2 className="text-center text-md-start fs-1 fw-bold">About me</h2>
+            <h2 className="text-center text-md-start fs-1 fw-bold wow animate__bounce">
+              About me
+            </h2>
             <p className="pagraph-about fs-6 lh-sm">
               Systems enginner - junior full-stack developer, skills in React,
               Angular, HTML, CSS, JavaScript, NodeJS, Responsive Design.

@@ -23,7 +23,7 @@ const Home = () => (
         <div className="d-flex justify-content-center">
           <div className="row col-lg-6 ">
             <div className="col-md-6 title-page ps-md-5 pe-md-0 ps-lg-3">
-              <h1 className="text-center text-md-start fw-bold fs-1 lh-sm">
+              <h1 className="text-center text-md-start fw-bold fs-1 lh-sm animate__animated animate__bounce">
                 Hi, i'm <br />
                 John Niño
               </h1>
