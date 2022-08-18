@@ -11,6 +11,8 @@ import imgMSA from "../images/msaenergy.png"
 import imgHeippi from "../images/heippi.png"
 import imgHocol from "../images/hocol.png"
 import imgPokemon from "../images/pokemon.png"
+import imgAkelabPeliculas from "../images/akelab-peliculas.png"
+import imgFynkus from "../images/fynkus.png"
 
 const MockData = [
   {
@@ -44,6 +46,23 @@ const MockData = [
     description:
       "I develop a web interface (SPA) in which you can search, filter and expand information about different Pokemon. Using Gatsby-React-Hooks-NodeJs-Redux-Bootstrap-Axios.",
     urlPage: "https://henkyubi666.github.io/Pokemon-gatsby/",
+  },
+  {
+    imgPage: imgAkelabPeliculas,
+    altImgPage: "Capture of Akelab peliculas page",
+    title: "Akelab Peliculas",
+    description:
+      "I develop a web interface (SPA) in which you can search, filter and expand information about different movies. Using Gatsby-React-Hooks-NodeJs-Express-Bootstrap.",
+    urlPage: "https://henkyubi666.github.io/akelab/",
+  },
+  {
+    imgPage: imgFynkus,
+    altImgPage: "Capture of Fynkus page",
+    title: "Fynkus",
+    description:
+      "I develop a mobile application with Dart - Flutter consuming API, and DDD+Bloc architecture, which manages farms for a client",
+    urlPage:
+      "https://play.google.com/store/apps/details?id=fynkus.administracionfincas&hl=es&gl=US",
   },
 ]
 const Portfolio = () => {

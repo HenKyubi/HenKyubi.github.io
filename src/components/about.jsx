@@ -41,10 +41,11 @@ const About = () => (
           <div className="text-about">
             <h2 className="text-center text-md-start fs-1 fw-bold">About me</h2>
             <p className="pagraph-about fs-6 lh-sm">
-              Systems enginner - junior full-stack developer, skills in React,
-              Angular, HTML, CSS, JavaScript, NodeJS, Responsive Design.
-              Knowledge of database engines (MySQL, MongoDB), handling of GIT
-              version control.
+              Systems engineer, +1 year experlence In web / mobile development,
+              MERN stack, and Flutter, applying good practices, documentatlon,
+              Clean Code, BEM, SOLID principies, knowledge in consumption and
+              development of RESTFul APls, Used to working with control systems
+              of versions like Git.
             </p>
           </div>
         </div>

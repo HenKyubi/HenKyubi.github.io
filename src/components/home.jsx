@@ -28,7 +28,7 @@ const Home = () => (
                 John Niño
               </h1>
               <p className="text-center text-md-start fs-6 lh-1 pagraph-title">
-                Front-End Developer &amp; Freelancer
+                Full Stack Developer &amp; Freelancer
               </p>
               <div className="d-flex justify-content-center justify-content-md-start">
                 <a

@@ -147,7 +147,6 @@ const Contacts = () => {
                 <div className="col-10 d-flex flex-column">
                   <h4 className="mb-0 fw-bold fs-5">Address</h4>
                   <p className="m-0 fs-6 lh-1 pb-2 pb-mb-0 card-contact-text">
-                    Carrera 27 # 2-59 <br /> Jose Antonio Galan <br />
                     (San Gil, Santander, Colombia)
                   </p>
                 </div>
